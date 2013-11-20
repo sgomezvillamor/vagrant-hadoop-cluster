@@ -2,14 +2,13 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "CentOS-6.3-x86_64-minimal"
+  config.vm.box = "UbuntuPrecise64"
 
   config.vm.provision :shell, :inline => "sudo cp /vagrant/files/etc/hosts /etc/hosts"
 
   config.vm.define :manager do |manager_config|
     manager_config.vm.host_name = "hadoop-manager"
     manager_config.vm.network :hostonly, "192.168.56.2"
-    manager_config.vm.customize ["modifyvm", :id, "--memory", 1024]
   end
 
   config.vm.define :node01 do |node01_config|
