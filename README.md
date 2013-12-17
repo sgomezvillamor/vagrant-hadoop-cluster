@@ -8,7 +8,6 @@ One master (`hadoop-manager`) and 3 slaves (`hadoop-nodeXX`).
 
 Once the cluster is up, do installation using the [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products/cloudera-manager.html).
 
-    $ vagrant box add UbuntuPrecise64 http://files.vagrantup.com/precise64.box
     $ git clone git://github.com/sgomezvillamor/vagrant-hadoop-cluster.git
     $ cd vagrant-hadoop-cluster
     $ vagrant up
