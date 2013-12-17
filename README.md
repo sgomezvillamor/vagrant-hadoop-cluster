@@ -16,4 +16,4 @@ Once the cluster is up, do installation using the [Cloudera Manager](http://www.
     [vagrant@hadoop-manager ~]$ chmod +x cloudera-manager-installer.bin
     [vagrant@hadoop-manager ~]$ sudo ./cloudera-manager-installer.bin
 
-After that, go to http://192.168.56.2:7180
+After that, go to http://192.168.56.2:7180 (_cloudera manager webapp_ requires firefox browser)
